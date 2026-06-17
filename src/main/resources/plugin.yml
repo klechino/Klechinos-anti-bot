@@ -1,0 +1,20 @@
+name: KlechinosAntiBot
+main: com.klechino.antibot.KlechinosAntiBot
+version: 1.0.0
+api-version: 1.21
+description: Anti-bot verification for Paper servers.
+commands:
+  antibot:
+    description: Admin commands for Klechinos Anti Bot.
+    usage: /antibot reload
+    permission: klechino.antibot.admin
+  verify:
+    description: Verify yourself by code.
+    usage: /verify <code>
+permissions:
+  klechino.antibot.admin:
+    description: Admin commands for the plugin
+    default: op
+  klechino.antibot.bypass:
+    description: Bypass anti-bot checks
+    default: false

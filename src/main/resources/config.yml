@@ -1,0 +1,25 @@
+# Klechinos Anti Bot default configuration
+captcha:
+  length: 5
+  timeout_seconds: 90
+  kick_after_seconds: 120
+
+rate:
+  window_ms: 5000
+  threshold: 6
+  attack_window_seconds: 30
+
+messages:
+  join: "&6Welcome! Please verify to continue."
+  captcha: "&eYour verification code is &c{code}&e. Please type it in chat or run &b/verify {code}"
+  how_to_verify: "&7If you can't chat, use &b/verify <code>"
+  verified: "&aThank you — you are now verified."
+  kick_timeout: "&cYou didn't verify in time."
+  invalid_code: "&cInvalid verification code."
+  blocked_command: "&cYou must verify before using commands."
+  chat_blocked: "&cYou must verify before chatting."
+  use_verify: "&6Use /verify <code> or type the code in chat."
+
+permissions:
+  admin: klechino.antibot.admin
+  bypass: klechino.antibot.bypass
